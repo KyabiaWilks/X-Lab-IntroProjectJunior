@@ -1,62 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# database
-/prisma/db.sqlite
-/prisma/db.sqlite-journal
-db.sqlite
-
-# next.js
-/.next/
-/out/
-next-env.d.ts
-
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-# do not commit any .env files to git, except for the .env.example file. https://create.t3.gg/en/usage/env-variables#using-environment-variables
-.env
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-
-# idea files
-.idea
-
-# Node.js / 前端相关
-node_modules/
-dist/
-build/
-.env
-.env.local
-.env.*.local
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
 # VSCode 配置
 .vscode/
 
@@ -90,17 +33,8 @@ go.mod
 *.test
 *.out
 
-# IDE 和编辑器相关
+# 编辑器相关
 .vscode/
-.idea/
-*.swp
-*~
-
-# 日志文件
-*.log
-
-# MacOS 文件
-.DS_Store
 
 # 临时文件
 *.tmp

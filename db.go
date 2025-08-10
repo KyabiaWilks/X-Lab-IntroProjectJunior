@@ -38,7 +38,7 @@ func initDB() {
     var dbPort = viper.GetString("postgres.port")      // 例如 "5432"
     var dbName = viper.GetString("postgres.dbname")
     
-    // PostgreSQL DSN 格式示例：
+    // PostgreSQL
     dsn := "host=" + dbHost +
         " user=" + dbUser +
         " password=" + dbPass +

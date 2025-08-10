@@ -21,7 +21,6 @@ type DeleteRequest struct {
 var total int64
 var invertOrder bool
 var mutex = &sync.Mutex{}
-
 func getComments(w http.ResponseWriter, r *http.Request) {
 	mutex.Lock()
 	defer mutex.Unlock()

@@ -28,17 +28,6 @@ func startServer() {
 	r.HandleFunc("/comment/delete", deleteComment).Methods("POST", "OPTIONS")
 	r.HandleFunc("/order/switch", switchOrder).Methods("GET", "OPTIONS")
 
-	//Serve static files
-	// fs := http.FileServer(http.Dir("./test"))
-	// http.Handle("/test/", http.StripPrefix("/test", fs))
-	// http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-	// 	if r.URL.Path == "/" {
-	// 		http.ServeFile(w, r, "./test/index.html")
-	// 	} else {
-	// 		http.NotFound(w, r)
-	// 	}
-	// })
-
 	fs := http.FileServer(http.Dir("./static"))
 	http.Handle("/static/", http.StripPrefix("/static", fs))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
