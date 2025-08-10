@@ -1,0 +1,18 @@
+{
+"port": 10666,
+"postgres": {
+  "username": "your_db_user",
+  "password": "your_db_password",
+  "host": "localhost",
+  "port": "5432",
+  "dbname": "your_database_name"
+}，
+"redis": ["127.0.0.1:6377", "127.0.0.1:6378", "127.0.0.1:6379"],
+"smtp": {
+  "enable": true,
+  "addr": "mail_addr",
+  "username": "mail_user",
+  "password": "mail_password",
+  "to": ["xxx@gmail.com", "xxx@163.com"]
+}
+}
